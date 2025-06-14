@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function showcontent(contentid){
+            const contents = document.querySelectorAll('.main2-content');
+            contents.forEach(content => content.style.display  = "none");
+            const startpage =  document.getElementById("startpage");
+            startpage.style.display = "none";
+            const selectedcontent = document.getElementById(contentid);
+            selectedcontent.style.display='block';
+        }
+        function showhome(){
+            const contents = document.querySelectorAll('.main2-content');
+            contents.forEach(content => content.style.display  = "none");
+            const homepage =  document.getElementById("startpage");
+            homepage.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="carousel">
+        <div class="list">
+
+            <div class="item">
+                <img src="images/startpic.jpg" alt="">
+                <div class="content">
+                    <div class="author"><h2 style="font-size: x-small;color:rgba(255, 4, 0, 0.997)">&copy;FaLCoN D-H softwares </h2></div>
+                    <div class="title">ADASA BEAUTY SPA</div>
+                    <div class="topic">Welcome to Adasa's spa.</div>
+                    <div class="des">
+                        <br>We are glad you could visit our site.<br>
+                        We are dedicated to providing a sanctuary of relaxation and rejuvenation.<br>
+                        Our mission is to help you look and feel your best<br> through luxurious treatments designed<br>
+                        to nurture both your body and mind
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/pic15.jpg" alt="">
+                <div class="content">
+                    <div class="author"><h2 style="font-size: x-small;color:rgba(255, 4, 0, 0.997)">&copy;FaLCoN D-H softwares </h2></div>
+                    <div class="title">ADASA BEAUTY SPA</div>
+                    <div class="topic">Our Story</div>
+                    <div class="des">
+                        Founded in 2024, <br>ADASA BEAUTY SPA was born from passion for beauty and wellness.<br>
+                        Ruth Hadasa, The founder, envisioned a space where clients could escape the stresses<br>
+                        of daily life and indulge in self-care.<br> With years of experience in the beauty industry
+                        , <br>Our team brings a blend of expertise and creativity to every service we offer.
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/pic27.jpg" alt="pic16.jpg">
+                <div class="content">
+                    <div class="author"><h2 style="font-size: x-small;color:rgba(255, 4, 0, 0.997)">&copy;FaLCoN D-H softwares </h2></div>
+                    <div class="title">ADASA BEAUTY SPA </div>
+                    <div class="topic">What makes us unique</div>
+                    <div class="des">
+                        We pride ourselves on offering personalized treatments tailored to your individual Needs
+                        .<br>From state-of-the-art skincare solutions to relaxing massages, every service is crafted
+                        with care.<br> Our spa features a serene, welcoming environment,<br> designed to provide an
+                        unforgettable experience.
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/pic18.jpg" alt="pic21.jpeg">
+                <div class="content">
+                    <div class="author"><h2 style="font-size: x-small;color:rgba(255, 4, 0, 0.997)">&copy;FaLCoN D-H softwares </h2></div>
+                    <div class="title">ADASA BEAUTY SPA </div>
+                    <div class="topic">Join<br>our community</div>
+                    <div class="des">
+                        We value every client and are proud to have built a loyal community of individuals<br> who trusts us
+                        with their beauty and wellness journey.
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/pic1.jpg" alt="pic7.jpg">
+                <div class="content">
+                    <div class="author"><h2 style="font-size: x-small;color:rgba(255, 4, 0, 0.997)">&copy;FaLCoN D-H softwares </h2></div>
+                    <div class="title">ADASA BEAUTY SPA </div>
+                    <div class="topic">Visit<br> Us Today</div>
+                    <div class="des">
+                        Discover the magic of ADASA BEAUTY SPA. We can't wait to welcome you and help you shine 
+                        from the inside out.Book your appointment today and take the first step toward rejuvenation.
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/img1.jpg" alt="pic12.jpg">
+                <div class="content">
+                    <div class="author"><h2 style="font-size: x-small;color:rgba(255, 4, 0, 0.997)">&copy;FaLCoN D-H softwares </h2></div>
+                    <div class="title">ADASA BEAUTY SPA </div>
+                    <div class="topic">Welcome to our site</div>
+                    <div class="des">
+                        We value your feedback.
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/img2.jpg" alt="pic15.jpg">
+                <div class="content">
+                    <div class="author"><h2 style="font-size: x-small;color:rgba(255, 4, 0, 0.997)">&copy;FaLCoN D-H softwares </h2></div>
+                    <div class="title">ADASA BEAUTY SPA </div>
+                    <div class="topic">Welcome to our Spa</div>
+                    <div class="des">
+                        We provide services such as<br>Pedicure<br>Manicure and more
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------thumbnail-->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="{% static 'images/pic17.jpg' %}" alt="pic17.jpg">
+                <div class="contents">
+                    <div class="title">
+                        Quality service
+                    </div>
+                    <div class="des">
+                        makeup
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/1000s.jpg' %}" alt="1000s.jpg">
+                <div class="contents">
+                    <div class="title">
+                        Quality products
+                    </div>
+                    <div class="des">
+                        Beauty service
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/pic16.jpg' %}" alt="pic16.jpg">
+                <div class="contents">
+                    <div class="title">
+                        Beautification
+                    </div>
+                    <div class="des">
+                        Makeover
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/pic10.jpg' %}" alt="pic21.jpeg">
+                <div class="contents">
+                    <div class="title">
+                        Tools of products
+                    </div>
+                    <div class="des">
+                        skin oils
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/pic22.jpeg' %}" alt="pic22.jpeg">
+                <div class="contents">
+                    <div class="title">
+                        service
+                    </div>
+                    <div class="des">
+                        Manicure & pedicure
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/pic12.jpg' %}" alt="pic12.jpg">
+                <div class="contents">
+                    <div class="title">
+                        luxury
+                    </div>
+                    <div class="des">
+                        luxury services
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/pic15.jpg' %}" alt="pic15.jpg">
+                <div class="contents">
+                    <div class="title">
+                        Quality service
+                    </div>
+                    <div class="des">
+                        Pedicure
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----arrows-->
+        <div class="arrows">
+            <button id="prev" class="prev-button"> .</button>
+            <button id="next">>></button><br>
+        </div>
+        <div class="time"></div>
+        <script src="index.js" defer></script>
+    </div>
+    
+    <div class="main2">
+        <div class="navcontainer">
+            <div class="nav" id="navbar">
+                <ul>
+                    <li><a href="#" onclick="showhome()" class="nav-link">Home</a></li>
+                    <li><a href="#" onclick="showcontent('service')" class="nav-link">Services</a></li>
+                    <li><a href="#" onclick="showcontent('gallery')" class="nav-link">gallery</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="start-page" id="startpage">
+            <div class="row" id="row">
+                <div class="col-1" id="startpage">
+                    <h2>Welcome to Adasa Beauty Spa</h2> <h4>where Beauty Meets Relaxation</h4>
+                    <p>Step into the world of calm, luxury and self-care<br>At Adasa Beauty spa,
+                    we offer Professional beauty and wellness services<br> tailored to leave you
+                    feeling refreshed, cofideent and radiant.<br>From soothing massages to glowing
+                    facials, Manicure,pedicure and more.<br>Our expert team is here to pamper you with <br>
+                    love and care<br>
+                    <h3>Book your Experience today and discover the true meaning of beauty</h3>
+                    </p>
+                    <h5 class="contact">Contact Us</h5>
+                    <ul>
+                        <li><img src="https://img.icons8.com/?size=20&id=aM7flMZy6COQ&format=png&color=000000"alt=""/>address</li>
+                        <li><img src="https://img.icons8.com/?size=20&id=121243&format=png&color=000000" alt=""/>phone</li>
+                        <li><img src="https://img.icons8.com/?size=20&id=YbPqIO0gOrT3&format=png&color=000000" alt=""/>email</li>
+                    </ul>
+                </div>
+                <div class="col-2" id="startpage">
+                    <img src="images/startpic.jpg" alt="pic21.jpeg" width=50% height=0%>
+                </div>
+            </div>
+        </div>
+        <div class="main2-content" id="service">
+            <div class="services-container">
+                <div class="services-header">
+                    <h1>Services</h1>
+                </div>
+                <div class="service">
+                    <img src="images/pic30.jpg" alt="" class="service-image"  />
+                    <div class="service-content">
+                        <h2>Pedicure and Manicure</h2>
+                        <p>Relaxing foot care for soft, smooth, polished feet and Expert nail care for elegant and well-groomed hands</p>
+                    </div>
+                </div>
+                
+                <div class="service">
+                    <img src="images/pic15.jpg" alt="" class="service-image"  />
+                    <div class="service-content">
+                        <h2>Gum Gel Overlay</h2>
+                        <p>A flexible and lightweight gel overlay that strengthens and protects your natural nails while offering a flawless finish</p>
+                    </div>
+                </div>
+                
+                <div class="service">
+                    <img src="images/pic10.jpg" alt="" class="service-image"  />
+                    <div class="service-content">
+                        <h2>Facial</h2>
+                        <p>Customized facials for glowing rejuvenated skin</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="images/pic13.jpg" alt="" class="service-image"  />
+                    <div class="service-content">
+                        <h2>Make Up</h2>
+                        <p>Professional makeup for every occasion to enhance your natural beauty</p>
+                    </div>
+                </div>
+                <div class="service">
+                    
+                    <img src="images/pic15.jpg" alt="" class="service-image"  />
+                    <div class="service-content">
+                        <h2> BUILDER GEL OVERLAY </h2>
+                        <p>A durable and thicker gel overlay designed to add structure and strength for long-lasting, sculpted nails.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gallery" class="main2-content">
+            <h1 class="gallery-title">Image Gallery</h1>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img1.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img2.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img3.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img4.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img5.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img6.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img7.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img8.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img9.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img10.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img11.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic1.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/img13.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic18.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic3.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic4.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic5.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic6.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic7.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic10.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic11.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic12.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic26.jpeg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic30.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#"  class="book-link"> View Book
+                        <img src="images/pic29.jpg" alt="" height="200px" width="200px" class="gallery-image" />
+                    </a>
+                </div>
+            </div>
+            <script src="gallery.js" defer></script>
+        </div>
+    </div>
+</body>
+</html>
