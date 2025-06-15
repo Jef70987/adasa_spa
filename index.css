@@ -376,10 +376,7 @@ body
     object-fit: cover;
     
     background-color: transparent;
-    border-top-right-radius: 80% 60%;
-    border-bottom-right-radius: 80% 60%;
-    margin-left: 2%;
-    margin-bottom: 10%;
+    
 }
 
 .start-page .row .col-1 h2{
